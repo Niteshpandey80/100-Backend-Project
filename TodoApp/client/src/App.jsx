@@ -36,7 +36,7 @@ const App = () => {
            {
             todo.map((todo)=>(
              <div className='mt-2' key={todo._id}>
-              <p className='ml-2'>{todo.text} <button onClick={()=>handleDelete(todo._id)} className='bg-red-500 text-white px-2'>Delete</button> </p>
+              <p className='ml-2'>{todo.text} <button onClick={()=>handleDelete(todo._id)} className='bg-red-500 text-white px-2'>Delete Todo </button> </p>
              </div>
             ))
            }

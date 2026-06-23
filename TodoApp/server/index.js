@@ -22,6 +22,7 @@ app.get('/todos' , async(req,res)=>{
    const todos =await Todo.find();
    res.json(todos)
 })
+
 app.post('/todos' , async(req,res)=>{
   const newTodo = new Todo({
     text:req.body.text,
@@ -29,9 +30,9 @@ app.post('/todos' , async(req,res)=>{
   await newTodo.save();
   res.json(newTodo);
 })
+
 app.delete("/todos/:id", async (req, res) => {
   await Todo.findByIdAndDelete(req.params.id);
-
   res.json({
     message: "Todo Deleted",
   });
