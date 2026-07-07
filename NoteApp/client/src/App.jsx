@@ -53,10 +53,10 @@ const App = () => {
     <div className="min-h-screen bg-gray-100 flex justify-center py-10">
       <div className="w-full max-w-2xl bg-white shadow-xl rounded-xl p-8">
         <h1 className="text-4xl font-bold text-center text-blue-600 mb-8">
-          📝 Note App
+          📝 Notes App
         </h1>
 
-        {/* Input Section */}
+  
         <div className="space-y-4">
           <input
             type="text"
@@ -78,11 +78,11 @@ const App = () => {
             onClick={addNote}
             className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-semibold"
           >
-            Add Note
+            Add Notes
           </button>
         </div>
 
-        {/* Notes Section */}
+
         <div className="mt-8">
           <h2 className="text-2xl font-semibold mb-4">All Notes</h2>
 
