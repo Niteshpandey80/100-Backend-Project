@@ -14,6 +14,22 @@ router.post('/add' , async(req,res)=>{
     })
     res.json(note)
 })
+router.put('/update/:id' , async(req,res)=>{
+    try {
+        const {title , value} = req.body;
+        const note = await Note.findByIdAndUpdate(
+            req.params.id,{
+                title , value
+            },
+            {
+                new:true,
+            }
+        )
+        res.json(note)
+    } catch (error) {
+        
+    }
+})
 router.delete('/delete/:id' , async(req,res)=>{
     try {
         await Note.findByIdAndDelete(req.params.id) ; 
