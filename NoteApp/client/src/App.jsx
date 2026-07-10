@@ -99,7 +99,7 @@ const App = () => {
                 ? "bg-green-600 hover:bg-green-700"
                 : "bg-blue-600 hover:bg-blue-700"
             }`}>
-              {editId ? "Update Note" : "Add Note"}
+              {editId ? "Update Notes" : "Add Notes"}
           </button>
         </div>
 
@@ -135,6 +135,7 @@ const App = () => {
                   >
                     Delete
                   </button>
+                
                 </div>
               ))}
             </div>
