@@ -125,7 +125,7 @@ const App = () => {
                   </div>
                   <button
                     onClick={() => editNote(note)}
-                    className="bg-blue-500 hover:bg-blue-600 ml-60 text-white px-5 py-2 rounded-lg font-semibold right-14"
+                    className="bg-blue-500 hover:bg-blue-600 ml-78 text-white px-5 py-2 rounded-lg font-semibold right-14"
                   >
                     Edit 
                   </button>
@@ -133,7 +133,7 @@ const App = () => {
                     onClick={() => deleteNote(note._id)}
                     className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg font-semibold"
                   >
-                    Delete
+                    Delete Note 
                   </button>
                 
                 </div>
